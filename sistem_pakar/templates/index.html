@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PathFinder AI â€” Cari Tahu Karir IT yang Cocok Buat Kamu</title>
+    <title>PathFinder AI — Cari Tahu Karir IT yang Cocok Buat Kamu</title>
     <meta name="description" content="Jawab 8 pertanyaan singkat dan temukan jalur karir IT yang paling pas buat kamu. Ditenagai sistem pakar berbasis Forward Chaining.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
 /* ============================================================
-   PATHFINDER AI â€” PROFESSIONAL STYLESHEET
+   PATHFINDER AI — PROFESSIONAL STYLESHEET
    Palette: #18163D | #2C265D | #675487 | #C47E95 | #E6BFC0
    ============================================================ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -63,7 +63,7 @@ body{font-family:'Outfit',sans-serif;background:var(--navy);color:var(--text-mai
 .btn-ghost{background:transparent;color:var(--text-muted)}
 .btn-ghost:hover{color:var(--blush)}
 
-/* ====== SCREEN 1 â€” INTRO ====== */
+/* ====== SCREEN 1 — INTRO ====== */
 .intro-layout{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:2rem 0 3rem}
 .intro-tag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(196,126,149,.15);border:1px solid rgba(196,126,149,.3);padding:.4rem 1rem;border-radius:99px;font-size:.85rem;color:var(--rose);margin-bottom:1.5rem;font-weight:500}
 .dot-pulse{width:8px;height:8px;background:var(--rose);border-radius:50%;animation:pulse 1.6s ease-in-out infinite}
@@ -84,7 +84,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
 .orbit-badge{position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px;background:rgba(44,38,93,.9);border:1px solid rgba(196,126,149,.4);border-radius:12px;display:grid;place-items:center;color:var(--blush);font-size:1rem;transform:rotate(var(--angle)) translateX(120px) rotate(calc(-1 * var(--angle)));animation:counter-spin 18s linear infinite;box-shadow:0 4px 16px rgba(0,0,0,.3)}
 @keyframes counter-spin{to{transform:rotate(var(--angle)) translateX(120px) rotate(calc(-1 * var(--angle) - 360deg))}}
 
-/* ====== SCREEN 2 â€” QUIZ ====== */
+/* ====== SCREEN 2 — QUIZ ====== */
 .quiz-layout{flex:1;display:flex;flex-direction:column;gap:1.5rem;padding:0 0 3rem;max-width:720px;margin:0 auto;width:100%}
 .quiz-header{display:flex;align-items:center;gap:1rem}
 .quiz-counter{font-size:.9rem;font-weight:600;color:var(--text-muted);white-space:nowrap;min-width:44px}
@@ -110,7 +110,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
 .opt-body span{font-size:.82rem;color:var(--text-muted)}
 .opt-score{font-size:.8rem;font-weight:700;color:var(--text-dim);position:relative;z-index:1;padding:.3rem .7rem;background:rgba(255,255,255,.06);border-radius:99px}
 
-/* ====== SCREEN 3 â€” LOADING ====== */
+/* ====== SCREEN 3 — LOADING ====== */
 #screen-loading{justify-content:center;align-items:center}
 .loading-box{text-align:center;max-width:420px;padding:3rem 2rem}
 .loading-ring{width:100px;height:100px;margin:0 auto 2rem;border-radius:50%;border:3px solid rgba(196,126,149,.15);border-top-color:var(--rose);animation:ring-spin 1.2s linear infinite;display:grid;place-items:center}
@@ -123,7 +123,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
 .load-step{font-size:.9rem;color:var(--blush);animation:fadeUp .5s ease both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-/* ====== SCREEN 4 â€” RESULT ====== */
+/* ====== SCREEN 4 — RESULT ====== */
 .result-layout{flex:1;display:flex;flex-direction:column;gap:1.5rem;padding-bottom:3rem}
 .result-heading{text-align:center;margin-bottom:.5rem}
 .result-tag{display:inline-flex;align-items:center;gap:.4rem;background:rgba(196,126,149,.15);border:1px solid rgba(196,126,149,.3);padding:.35rem 1rem;border-radius:99px;font-size:.8rem;color:var(--rose);margin-bottom:.8rem;font-weight:500}
@@ -159,7 +159,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
 .roadmap-item h5 i{color:var(--rose)}
 .roadmap-item ul{list-style:none;display:flex;flex-direction:column;gap:.35rem}
 .roadmap-item ul li{font-size:.88rem;color:var(--text-muted);display:flex;align-items:flex-start;gap:.4rem}
-.roadmap-item ul li::before{content:'â€¢';color:var(--rose);flex-shrink:0;margin-top:1px}
+.roadmap-item ul li::before{content:'•';color:var(--rose);flex-shrink:0;margin-top:1px}
 .result-actions{display:flex;gap:1rem;justify-content:center;padding-top:.5rem}
 .app-footer{border-top:1px solid rgba(230,191,192,.08);padding:1.2rem 0;margin-top:auto}
 .footer-content{display:flex;justify-content:center;align-items:center;gap:1rem;font-size:.82rem;color:var(--text-dim)}
@@ -183,8 +183,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
     .screen{display:block!important}
     body{background:#fff;color:#000}
 }
-
-</style>
+    </style>
 </head>
 <body>
 
@@ -209,9 +208,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
             </div>
         </nav>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 1: INTRO                                               -->
-        <!-- ============================================================ -->
+        <!-- SCREEN 1: INTRO -->
         <div id="screen-intro" class="screen active">
             <div class="intro-layout">
                 <div class="intro-content">
@@ -266,12 +263,9 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 2: QUIZ                                                -->
-        <!-- ============================================================ -->
+        <!-- SCREEN 2: QUIZ -->
         <div id="screen-quiz" class="screen">
             <div class="quiz-layout">
-                <!-- Header -->
                 <div class="quiz-header">
                     <div class="quiz-counter">
                         <span id="q-current">1</span> / <span id="q-total">8</span>
@@ -282,7 +276,6 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
                     <div class="quiz-pct" id="quiz-pct">0%</div>
                 </div>
 
-                <!-- Question Card -->
                 <div class="question-card glass-card" id="question-card">
                     <div class="question-icon-wrap" id="question-icon">
                         <i class="fa-solid fa-code"></i>
@@ -290,7 +283,6 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
                     <h2 id="question-text">Apakah Anda menikmati menulis kode dan membangun perangkat lunak?</h2>
                 </div>
 
-                <!-- Options -->
                 <div class="options-grid">
                     <button class="option-btn" data-value="1" id="opt-yes">
                         <div class="opt-icon opt-yes"><i class="fa-solid fa-thumbs-up"></i></div>
@@ -320,29 +312,23 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 3: LOADING                                             -->
-        <!-- ============================================================ -->
+        <!-- SCREEN 3: LOADING -->
         <div id="screen-loading" class="screen">
             <div class="loading-box">
                 <div class="loading-ring">
                     <i class="fa-solid fa-brain loading-brain"></i>
                 </div>
-                <h3>Lagi diproses nihâ€¦</h3>
+                <h3>Lagi diproses nih…</h3>
                 <p>Sistem lagi ngitung cocok-cocokan jawabanmu<br>pakai metode <strong>Forward Chaining</strong>.</p>
                 <div class="loading-steps" id="loading-steps">
-                    <div class="load-step" id="ls-1"><i class="fa-solid fa-circle-notch fa-spin"></i> Mengumpulkan faktaâ€¦</div>
+                    <div class="load-step" id="ls-1"><i class="fa-solid fa-circle-notch fa-spin"></i> Mengumpulkan fakta…</div>
                 </div>
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 4: RESULT                                              -->
-        <!-- ============================================================ -->
+        <!-- SCREEN 4: RESULT -->
         <div id="screen-result" class="screen">
             <div class="result-layout">
-
-                <!-- Heading -->
                 <div class="result-heading">
                     <div class="result-tag">
                         <i class="fa-solid fa-star"></i> Ini hasilnya buat kamu
@@ -351,23 +337,15 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
                     <p id="result-subtitle">Dari 8 pertanyaan yang kamu jawab, ini jalur karir yang paling pas.</p>
                 </div>
 
-                <!-- Primary Card -->
-                <div class="primary-card glass-card" id="primary-card">
-                    <!-- JS inject -->
-                </div>
+                <div class="primary-card glass-card" id="primary-card"></div>
 
-                <!-- Score Bars -->
                 <div class="glass-card score-section">
                     <h4 class="section-title"><i class="fa-solid fa-chart-bar"></i> Perbandingan Semua Jalur Karir</h4>
                     <div id="score-bars"></div>
                 </div>
 
-                <!-- Career Detail -->
-                <div class="glass-card detail-section" id="career-detail">
-                    <!-- JS inject -->
-                </div>
+                <div class="glass-card detail-section" id="career-detail"></div>
 
-                <!-- Actions -->
                 <div class="result-actions">
                     <button id="restart-btn" class="btn btn-outline">
                         <i class="fa-solid fa-rotate-right"></i> Coba Lagi
@@ -384,21 +362,15 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacin
             <div class="footer-content">
                 <span><i class="fa-solid fa-compass-drafting"></i> PathFinder AI</span>
                 <span class="footer-divider">|</span>
-                <span>Sistem Pakar â€” Forward Chaining</span>
+                <span>Sistem Pakar — Forward Chaining</span>
                 <span class="footer-divider">|</span>
                 <span>Responsi Kecerdasan Buatan &copy; 2026</span>
             </div>
         </footer>
 
-    </div><!-- end app-wrapper -->
+    </div>
 
     <script>
-// ============================================================
-// PATHFINDER AI â€” SCRIPT.JS
-// Sistem Pakar Karir IT | Forward Chaining
-// ============================================================
-
-// ---------- Data Pertanyaan ----------
 const questions = [
     { id: 'programming',    text: 'Kamu suka nulis kode dan senang memecahkan masalah lewat logika pemrograman?',              icon: 'fa-code' },
     { id: 'design',         text: 'Kamu punya selera estetika yang tinggi dan tertarik sama tampilan visual aplikasi?',          icon: 'fa-palette' },
@@ -410,16 +382,13 @@ const questions = [
     { id: 'communication',  text: 'Kamu suka ngobrol sama pengguna, dengerin masalah mereka, dan nyari solusi bareng?',         icon: 'fa-users' }
 ];
 
-// ---------- State Aplikasi ----------
 let currentQ  = 0;
 let userFacts = {};
 
-// ---------- DOM ----------
 const screenIntro   = document.getElementById('screen-intro');
 const screenQuiz    = document.getElementById('screen-quiz');
 const screenLoading = document.getElementById('screen-loading');
 const screenResult  = document.getElementById('screen-result');
-
 const startBtn      = document.getElementById('start-btn');
 const restartBtn    = document.getElementById('restart-btn');
 const optionBtns    = document.querySelectorAll('.option-btn');
@@ -432,16 +401,14 @@ const questionText  = document.getElementById('question-text');
 
 qTotal.textContent = questions.length;
 
-// ---------- Ganti Layar ----------
 function showScreen(from, to) {
     from.classList.remove('active');
     from.style.display = 'none';
     to.style.display = 'flex';
-    void to.offsetWidth; // reflow untuk trigger animasi
+    void to.offsetWidth;
     to.classList.add('active');
 }
 
-// ---------- Mulai Quiz ----------
 startBtn.addEventListener('click', () => {
     userFacts = {};
     currentQ  = 0;
@@ -449,58 +416,39 @@ startBtn.addEventListener('click', () => {
     showScreen(screenIntro, screenQuiz);
 });
 
-// ---------- Ulang ----------
 restartBtn.addEventListener('click', () => {
     showScreen(screenResult, screenIntro);
 });
 
-// ---------- Pilih Jawaban ----------
 optionBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         const val = parseFloat(e.currentTarget.dataset.value);
-
-        // Efek visual sementara
         e.currentTarget.style.borderColor = 'var(--rose)';
         e.currentTarget.style.background  = 'rgba(196,126,149,0.12)';
-
         setTimeout(() => handleAnswer(val), 200);
     });
 });
 
-// ---------- Render Pertanyaan ----------
 function renderQuestion() {
     const q   = questions[currentQ];
     const pct = Math.round((currentQ / questions.length) * 100);
-
     progressBar.style.width  = pct + '%';
     quizPct.textContent      = pct + '%';
     qCurrent.textContent     = currentQ + 1;
-
-    // Animasi keluar
-    questionIcon.style.opacity   = '0';
-    questionIcon.style.transform = 'scale(0.7)';
-    questionText.style.opacity   = '0';
-    questionText.style.transform = 'translateY(10px)';
-
-    // Reset style tombol
+    questionIcon.style.opacity = '0';
+    questionText.style.opacity = '0';
     optionBtns.forEach(b => { b.style.borderColor = ''; b.style.background = ''; });
-
     setTimeout(() => {
         questionIcon.innerHTML   = `<i class="fa-solid ${q.icon}"></i>`;
         questionText.textContent = q.text;
-
-        questionIcon.style.opacity   = '1';
-        questionIcon.style.transform = 'scale(1)';
-        questionText.style.opacity   = '1';
-        questionText.style.transform = 'translateY(0)';
+        questionIcon.style.opacity = '1';
+        questionText.style.opacity = '1';
     }, 250);
 }
 
-// ---------- Proses Jawaban ----------
 function handleAnswer(value) {
     userFacts[questions[currentQ].id] = value;
     currentQ++;
-
     if (currentQ < questions.length) {
         renderQuestion();
     } else {
@@ -510,20 +458,11 @@ function handleAnswer(value) {
     }
 }
 
-// ---------- Inference Engine (kirim ke Python backend) ----------
 function runInference() {
     showScreen(screenQuiz, screenLoading);
-
-    const steps = [
-        'Mengumpulkan fakta dari jawabanmuâ€¦',
-        'Mencocokkan ke basis pengetahuanâ€¦',
-        'Menghitung bobot tiap jalur karirâ€¦',
-        'Menyusun hasil rekomendasiâ€¦'
-    ];
-
+    const steps = ['Mengumpulkan fakta...', 'Mencocokkan basis pengetahuan...', 'Menghitung bobot...', 'Menyusun hasil...'];
     const stepsContainer = document.getElementById('loading-steps');
     stepsContainer.innerHTML = '';
-
     steps.forEach((s, i) => {
         setTimeout(() => {
             const el = document.createElement('div');
@@ -532,122 +471,58 @@ function runInference() {
             stepsContainer.appendChild(el);
         }, i * 550);
     });
-
-    // Panggil backend Python setelah animasi loading selesai
     setTimeout(() => {
         fetch('/api/consult', {
             method:  'POST',
             headers: { 'Content-Type': 'application/json' },
             body:    JSON.stringify(userFacts)
         })
-        .then(res => {
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            return res.json();
-        })
+        .then(res => res.json())
         .then(results => {
-            if (!results || results.length === 0) {
-                throw new Error('Hasil kosong dari server');
-            }
             renderResults(results);
             showScreen(screenLoading, screenResult);
         })
         .catch(err => {
-            console.error('Inference error:', err);
-            stepsContainer.innerHTML += `
-                <div class="load-step" style="color:#ff6b6b;">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    Gagal menghubungi server. Pastikan <code>python app.py</code> berjalan.
-                </div>`;
+            console.error(err);
         });
     }, steps.length * 550 + 300);
 }
 
-// ---------- Tampilkan Hasil ----------
 function renderResults(results) {
     const top = results[0];
-
-    // Validasi data primer
-    if (!top || !top.name) return;
-
-    // Heading
-    document.getElementById('result-title').textContent    = top.name;
-    document.getElementById('result-subtitle').textContent =
-        `Dari ${questions.length} pertanyaan yang kamu jawab, ini jalur karir yang paling sesuai.`;
-
-    // Primary Card
-    const traitsHtml = (top.traits || [])
-        .map(t => `<span class="trait-pill">${t}</span>`).join('');
-
+    document.getElementById('result-title').textContent = top.name;
+    const traitsHtml = (top.traits || []).map(t => `<span class="trait-pill">${t}</span>`).join('');
     document.getElementById('primary-card').innerHTML = `
         <div class="primary-card-inner">
             <div class="primary-icon"><i class="fa-solid ${top.icon}"></i></div>
             <div class="primary-info">
                 <h3>${top.name}</h3>
-                <div class="match-badge">
-                    <i class="fa-solid fa-check-circle"></i>
-                    ${Math.round(top.score)}% Kecocokan
-                </div>
+                <div class="match-badge">${Math.round(top.score)}% Kecocokan</div>
                 <p class="primary-desc">${top.description}</p>
                 <div class="trait-list">${traitsHtml}</div>
             </div>
         </div>`;
-
-    // Score Bars â€” semua karir
     const barsContainer = document.getElementById('score-bars');
     barsContainer.innerHTML = '';
-
     results.forEach((r, i) => {
         const isTop = (i === 0);
         const item  = document.createElement('div');
         item.className = 'score-bar-item' + (isTop ? ' is-top' : '');
         item.innerHTML = `
-            <div class="score-bar-label">
-                <i class="fa-solid ${r.icon}"></i>
-                ${r.name}
-            </div>
-            <div class="score-bar-track">
-                <div class="score-bar-fill${isTop ? ' top' : ''}" data-pct="${r.score}"></div>
-            </div>
+            <div class="score-bar-label"><i class="fa-solid ${r.icon}"></i> ${r.name}</div>
+            <div class="score-bar-track"><div class="score-bar-fill${isTop ? ' top' : ''}" style="width:${r.score}%"></div></div>
             <div class="score-bar-pct">${Math.round(r.score)}%</div>`;
         barsContainer.appendChild(item);
     });
-
-    // Animasi bar setelah render
-    requestAnimationFrame(() => {
-        setTimeout(() => {
-            document.querySelectorAll('.score-bar-fill').forEach(bar => {
-                bar.style.width = bar.dataset.pct + '%';
-            });
-        }, 80);
-    });
-
-    // Roadmap / Peta Karir
     const rm = top.roadmap || {};
-    const skillsHtml = (rm.skills || []).map(s => `<li>${s}</li>`).join('');
-    const toolsHtml  = (rm.tools  || []).map(t => `<li>${t}</li>`).join('');
-    const certsHtml  = (rm.certs  || []).map(c => `<li>${c}</li>`).join('');
-
     document.getElementById('career-detail').innerHTML = `
-        <h4 class="roadmap-title">
-            <i class="fa-solid fa-road"></i> Peta Karir: ${top.name}
-        </h4>
+        <h4 class="roadmap-title"><i class="fa-solid fa-road"></i> Peta Karir: ${top.name}</h4>
         <div class="roadmap-grid">
-            <div class="roadmap-item">
-                <h5><i class="fa-solid fa-bolt"></i> Skill yang Perlu Dikuasai</h5>
-                <ul>${skillsHtml}</ul>
-            </div>
-            <div class="roadmap-item">
-                <h5><i class="fa-solid fa-wrench"></i> Tools yang Sering Dipakai</h5>
-                <ul>${toolsHtml}</ul>
-            </div>
-            <div class="roadmap-item">
-                <h5><i class="fa-solid fa-certificate"></i> Sertifikasi yang Direkomendasikan</h5>
-                <ul>${certsHtml}</ul>
-            </div>
+            <div class="roadmap-item"><h5>Skills</h5><ul>${(rm.skills||[]).map(s=>`<li>${s}</li>`).join('')}</ul></div>
+            <div class="roadmap-item"><h5>Tools</h5><ul>${(rm.tools||[]).map(t=>`<li>${t}</li>`).join('')}</ul></div>
+            <div class="roadmap-item"><h5>Certs</h5><ul>${(rm.certs||[]).map(c=>`<li>${c}</li>`).join('')}</ul></div>
         </div>`;
 }
-
-</script>
+    </script>
 </body>
 </html>
-
